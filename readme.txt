@@ -36,5 +36,13 @@
     git checkout命令加上-b参数表示创建并切换，相当于以下两条命令：
     git branch dev
     git checkout dev
+8.文件删除
+    a.先删除
+        rm test.txt
+    b.在git删除
+        git rm test.txt
+    c. 然后确认
+        git commit -m "remove test.txt"
+
  
   
