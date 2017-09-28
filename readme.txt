@@ -1,7 +1,12 @@
     learn git 
+ 配置当前仓库用户及邮箱
+git config user.name "Your Name"
+git config user.email "email@xx.com"
+
 1. 建一个空目录
     mkdir 目录名
 2.建可以管理的仓库
+    cd 到该目录下
     git init 
 3.提交文件
     a.查看状态有未提交的会显示
@@ -29,6 +34,7 @@
     c.修改后再看一下
      git remote -v  
 6.从远程克隆文件
+    现在远程建个仓库 在本地相应的位置克隆一份
     确定远程有这个仓库
    git clone git@github.com:账户名/远程仓库名.git
 7. 创建分支
@@ -43,6 +49,7 @@
         git rm test.txt
     c. 然后确认
         git commit -m "remove test.txt"
-
+9.建ssh密钥
+    ssh-keygen -t rsa -C "s07daihuili@163.com"
  
   
