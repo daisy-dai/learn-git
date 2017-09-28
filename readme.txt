@@ -20,17 +20,26 @@ git config user.email "email@xx.com"
    git diff +文件
     可以查看做了什么修改
 4.提交到远程仓库
+    i.注册一个github账号
+    ii.建ssh密钥
+    ssh-keygen -t rsa -C "邮箱名称"
+    一路回车，创建成功的话在用户主目录里找到.ssh目录，里面有id_rsa和id_rsa.pub两个文件，
+    这两个就是SSH Key的秘钥对，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以告诉任何人。
+    登陆GitHub，打开“Account settings”，“SSH Keys”页面：
+    点“Add SSH Key”，填上任意Title，在Key文本框里粘贴id_rsa.pub文件的内容：即可
     a.关联到远程库
         git remote add origin git@github.com:账户名/远程仓库名.git
     b.把本地库的所有内容推送到远程库上
         git push -u origin master
     c.提交过之后，只要本地作了提交，就可以通过命令：
         git push origin master
-5.修改用户名的修改
+5.用户名的修改
     a.查看远程用户地址
      git remote -v  
     b.修改远程地址
      git remote set-url origin https://github.com/账户名/远程仓库的名字.git
+     这样也可以
+     git remote set-url origin github.com/账户名/远程仓库的名字.git
     c.修改后再看一下
      git remote -v  
 6.从远程克隆文件
@@ -49,7 +58,6 @@ git config user.email "email@xx.com"
         git rm test.txt
     c. 然后确认
         git commit -m "remove test.txt"
-9.建ssh密钥
-    ssh-keygen -t rsa -C "s07daihuili@163.com"
+
  
   
