@@ -41,7 +41,9 @@ git config user.email "email@xx.com"
      这样也可以
      git remote set-url origin github.com/账户名/远程仓库的名字.git
     c.修改后再看一下
-     git remote -v  
+     git remote -v
+    d. 删除远程库
+        git remote rm origin 
 6.从远程克隆文件
     现在远程建个仓库 在本地相应的位置克隆一份
     确定远程有这个仓库
