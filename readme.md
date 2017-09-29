@@ -63,6 +63,20 @@ git config user.email "email@xx.com"
 9.项目不一样，要先pull合并再push
 pull
 git pull gitee master # 
+把文件统一在以后再
+git push gitee master
+
+10.目前使用码云 比较快
+    1.先申请账号，添加ssh key
+    2.把本地的git 库直接push 到码云上
+    先关联远程库：先删除原来关联的远程库
+     git remote rm origin
+    再添加github 和gitee库
+     git remote add github git@github.com:账户名/远程仓库名.git
+     git remote add gitee git@gitee.com:账户名/远程仓库名.git#账户名暂时不能修改
+ 
+     就可以同步项目了
+     git push gitee master
 
 
  
